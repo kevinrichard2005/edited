@@ -881,11 +881,6 @@ text-decoration: none; /* 🚫 Removes underline */
     height: 160px;
   }
 
-  .about-text,
-  .btn {
-    max-width: 100%;
-    text-align: center;
-  }
 
   /* ✅ 2 skill cards per row on mobile */
   @media (max-width: 768px) {
