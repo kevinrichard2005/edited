@@ -116,29 +116,6 @@ ScrollReveal().reveal('.project-card:nth-child(even)', {
   scale: 0.95,
   reset: true
 });
-// 🎯 Section headers (like About, Experience, Contact) → alternate left/right
-ScrollReveal().reveal('.section:nth-child(odd) h2', {
-  distance: '100px',
-  origin: 'left',
-  duration: 1000,
-  reset: true
-});
-ScrollReveal().reveal('.section:nth-child(even) h2', {
-  distance: '100px',
-  origin: 'right',
-  duration: 1000,
-  reset: true
-});
-
-// 🎯 Section content → fade up for text blocks
-ScrollReveal().reveal('.section p, .section form, .experience-box', {
-  distance: '60px',
-  origin: 'bottom',
-  duration: 1000,
-  interval: 150,
-  reset: true
-});
-
 
 });
 
