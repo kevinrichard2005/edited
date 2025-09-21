@@ -46,76 +46,100 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Base animation for sections
-  ScrollReveal().reveal('.section', {
-    distance: '60px',
-    duration: 1000,
-    easing: 'ease-in-out',
-    opacity: 0,
-    interval: 200
-  });
 
-  // 🎯 Skills → alternate left/right
-  ScrollReveal().reveal('.skill-item:nth-child(odd)', {
-    distance: '80px',
-    origin: 'left',
-    duration: 1000,
-    interval: 150
-  });
-  ScrollReveal().reveal('.skill-item:nth-child(even)', {
-    distance: '80px',
-    origin: 'right',
-    duration: 1000,
-    interval: 150
-  });
+// 🎯 Skills → alternate left/right
+ScrollReveal().reveal('.skill-item:nth-child(odd)', {
+  distance: '80px',
+  origin: 'left',
+  duration: 1000,
+  interval: 150,
+  reset: true
+});
+ScrollReveal().reveal('.skill-item:nth-child(even)', {
+  distance: '80px',
+  origin: 'right',
+  duration: 1000,
+  interval: 150,
+  reset: true
+});
 
-  // 🎯 Certificates → alternate left/right
-  ScrollReveal().reveal('.cert-card:nth-child(odd)', {
-    distance: '80px',
-    origin: 'left',
-    duration: 1200,
-    interval: 200,
-    scale: 0.9
-  });
-  ScrollReveal().reveal('.cert-card:nth-child(even)', {
-    distance: '80px',
-    origin: 'right',
-    duration: 1200,
-    interval: 200,
-    scale: 0.9
-  });
+// 🎯 Certificates → alternate left/right
+ScrollReveal().reveal('.cert-card:nth-child(odd)', {
+  distance: '80px',
+  origin: 'left',
+  duration: 1200,
+  interval: 200,
+  scale: 0.9,
+  reset: true
+});
+ScrollReveal().reveal('.cert-card:nth-child(even)', {
+  distance: '80px',
+  origin: 'right',
+  duration: 1200,
+  interval: 200,
+  scale: 0.9,
+  reset: true
+});
 
-  // 🎯 About Page Icons → alternate left/right
-  ScrollReveal().reveal('.social-icons li:nth-child(odd)', {
-    distance: '50px',
-    origin: 'left',
-    duration: 1000,
-    interval: 150,
-    scale: 0.9
-  });
-  ScrollReveal().reveal('.social-icons li:nth-child(even)', {
-    distance: '50px',
-    origin: 'right',
-    duration: 1000,
-    interval: 150,
-    scale: 0.9
-  });
+// 🎯 About Icons → alternate left/right
+ScrollReveal().reveal('.social-icons li:nth-child(odd)', {
+  distance: '50px',
+  origin: 'left',
+  duration: 1000,
+  interval: 150,
+  scale: 0.9,
+  reset: true
+});
+ScrollReveal().reveal('.social-icons li:nth-child(even)', {
+  distance: '50px',
+  origin: 'right',
+  duration: 1000,
+  interval: 150,
+  scale: 0.9,
+  reset: true
+});
 
-  // 🎯 Projects → alternate left/right
-  ScrollReveal().reveal('.project-card:nth-child(odd)', {
-    distance: '80px',
-    origin: 'left',
-    duration: 1100,
-    interval: 200,
-    scale: 0.95
-  });
-  ScrollReveal().reveal('.project-card:nth-child(even)', {
-    distance: '80px',
-    origin: 'right',
-    duration: 1100,
-    interval: 200,
-    scale: 0.95
-  });
+// 🎯 Projects → alternate left/right
+ScrollReveal().reveal('.project-card:nth-child(odd)', {
+  distance: '80px',
+  origin: 'left',
+  duration: 1100,
+  interval: 200,
+  scale: 0.95,
+  reset: true
+});
+ScrollReveal().reveal('.project-card:nth-child(even)', {
+  distance: '80px',
+  origin: 'right',
+  duration: 1100,
+  interval: 200,
+  scale: 0.95,
+  reset: true
+});
+// 🎯 Section headers (like About, Experience, Contact) → alternate left/right
+ScrollReveal().reveal('.section:nth-child(odd) h2', {
+  distance: '100px',
+  origin: 'left',
+  duration: 1000,
+  reset: true
+});
+ScrollReveal().reveal('.section:nth-child(even) h2', {
+  distance: '100px',
+  origin: 'right',
+  duration: 1000,
+  reset: true
+});
+
+// 🎯 Section content → fade up for text blocks
+ScrollReveal().reveal('.section p, .section form, .experience-box', {
+  distance: '60px',
+  origin: 'bottom',
+  duration: 1000,
+  interval: 150,
+  reset: true
+});
+
+
 });
 
 // Auto-close nav on link click (mobile)
